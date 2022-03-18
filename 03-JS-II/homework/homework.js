@@ -139,18 +139,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(numero===2){return true};
-
-  if(numero<2){return false};
-
-  for(var I=2; I<=2; I++){
-
-    if(numero%2 === 0){return false;
-    }
-    else{
-      return true;
-    }
-  }
+  
 }
 
 function esVerdadero(valor){
@@ -166,11 +155,10 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  for(a=0; a<11; a++){
-    return a*6;
+  
   }
   
-}
+
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
@@ -188,12 +176,7 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  I=0;
-  do{
-    I=I++;
-    numero=numero+5;
-  }while(I<9);
-return numro;
+  
 
 }
 
