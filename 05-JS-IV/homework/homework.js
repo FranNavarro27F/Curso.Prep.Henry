@@ -9,11 +9,12 @@ function crearGato(nombre, edad) {
   var objeto = {
 
     nombre: nombre,
-    edad: edad, 
-    meow: function meow(){
+    edad: edad,
+    meow: function (){
       return "Meow!"
     }
   }
+
   return objeto;
 }
 
@@ -23,11 +24,12 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-
-  objeto[property] = null;
+  objeto[property]= null;
 
   return objeto;
+
 }
+
 
 function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
@@ -42,9 +44,8 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 
-  var resultado = objetoMisterioso["numeroMisterioso"] * 5;
+  return objetoMisterioso.numeroMisterioso * 5;
 
-  return resultado;
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -56,17 +57,22 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   delete objeto[unaPropiedad];
 
   return objeto;
+
 }
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-  var objeto = {
+  
+   var objeto = {
+
     nombre: nombre,
     email: email,
     password: password,
+
   }
+
   return objeto;
 }
 
@@ -77,7 +83,8 @@ function tieneEmail(usuario) {
 
   if (usuario["email"]){
     return true;
-  } else {
+  }
+  else {
     return false;
   }
 
@@ -178,11 +185,10 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
 
-  producto.calcularPrecioDescuento = function(){
+  producto["calcularPrecioDescuento"]=function(){
    return this.precio - (this.precio * this.porcentajeDeDescuento)
   }
-return producto;
-
+ return producto
 }
 
 // No modificar nada debajo de esta línea
